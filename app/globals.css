@@ -1,0 +1,43 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*{
+  font-family: Outfit;
+}
+
+light{
+  --bg-col-whit : white;
+  --text-col: black;
+  --hover-col: oklch(0.374 0.01 67.558);
+}
+
+dark{
+  --bg-col-light : black;
+  --text-col: white;
+  --hover-col: oklch(0.5 0.134 242.749);
+}
+
+
+@layer components {
+  .container {
+    @apply mx-auto md:max-w-[700px] lg:max-w-[900px] xl:max-w-[1180px] 2xl:max-w-[1300px] px-2 md:px-0;
+  }
+  .commpn-text {
+    @apply font-Outfit text-lg text-gray-800 md:text-xl;
+  }
+  .light-text {
+    @apply font-Outfit text-lg text-gray-600 md:text-xl;
+  }
+}
+
+.hover-effect{
+  -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+-moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+}
+
+
+
+
+
