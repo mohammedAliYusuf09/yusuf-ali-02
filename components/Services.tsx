@@ -43,7 +43,7 @@ function Services() {
     <div id='services' className='container'>
         <h4 className='font-Outfit text-xl text-center mt-[4rem] md:mt-[6rem]'>What i offer</h4>
         <h2 className='font-Ovo text-4xl text-center mt-4 font-[500]'>My services</h2>
-        <div className='flex flex-col lg:flex-row gap-6 h-[30rem] my-[1rem] lg:my-[2rem]'>
+        <div className='flex flex-col lg:flex-row gap-6 min-h-[30rem] my-[1rem] lg:my-[2rem]'>
             <div className='lg:w-[50%] flex items-center'>
                 <div>
                     <div className='p-4 border border-gray-300 flex flex-col gap-4'>
