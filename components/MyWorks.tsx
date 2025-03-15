@@ -1,5 +1,6 @@
 import React from 'react'
 import dentist_web from '@/public/dntistwebsite.png';
+import byte from '@/public/byet.png';
 import { StaticImageData } from 'next/image';
 import MyWorksComponent from './MyWorksComponent';
 
@@ -16,7 +17,12 @@ function MyWorks() {
       link: 'https://max-martel-ali.vercel.app/',
       image: dentist_web,
       title: 'Max martal dental website'
-    }
+    },
+    {
+      link: 'https://bite-byte-becipe.vercel.app/',
+      image: byte,
+      title: 'Bite Byte Recipe'
+    },
     
   ]
   return (
