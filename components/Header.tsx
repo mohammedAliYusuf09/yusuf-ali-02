@@ -34,7 +34,7 @@ function Header() {
           <li><a className="font-Ovo text-sm md:text-lg 2xl:text-xl hover:text-gray-600 transition-colors ease-out duration-200" href="#work">My work</a></li>
         </ul>
 
-        <a href="#contact" className="hidden w-24 py-2 md:flex items-center justify-center gap-2 text-sm md:text-lg 2xl:text-xl font-Ovo text-white bg-black rounded-full hover:bg-stone-600 transition-all ease-in duration-300">Contact</a>
+        <a href="#contact" className="hidden w-24 py-2 md:flex items-center justify-center gap-2 text-sm md:text-lg 2xl:text-xl font-Ovo text-white bg-gradient-to-r from-indigo-400 to-cyan-400 rounded-full hover:shadow-md transition-all ease-in duration-300">Contact</a>
         <span className="md:hidden text-xl cursor-pointer hover:text-gray-600 transition-colors ease-in-out duration-300" onClick={openMenu}><CiMenuBurger /></span>
 
         {/* mobile menu  */}
@@ -43,7 +43,6 @@ function Header() {
           <div className="absolute top-2 right-2" onClick={closeMenu}>
             <span className="text-2xl cursor-pointer text-gray-800 hover:text-gray-600 transition-colors ease-in-out duration-300"><MdCancel /></span>
           </div>
-          {/* <button className="w-20 py-2 flex items-center justify-center gap-2 text-sm md:text-lg 2xl:text-xl font-Ovo text-white bg-black rounded-full hover:bg-stone-600 transition-all ease-in duration-300">Contact</button> */}
           <li className="mt-2"><a className="font-Ovo hover:text-gray-600 transition-colors ease-in duration-300" href="#top">Home</a></li>
           <li className=""><a className="font-Ovo  hover:text-gray-600 transition-colors ease-in duration-300" href="#about">About me</a></li>
           <li className=""><a className="font-Ovo  hover:text-gray-600 transition-colors ease-in duration-300" href="#services">Services</a></li>
@@ -55,3 +54,4 @@ function Header() {
 }
 
 export default Header
+

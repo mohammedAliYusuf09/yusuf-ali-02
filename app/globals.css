@@ -30,12 +30,25 @@ dark{
     @apply font-Outfit text-lg text-gray-600 md:text-xl;
   }
 }
+@layer utilities {
+  .preserve-3d {
+      transform-style: preserve-3d;
+  }
+  .translate-z-20 {
+      transform: translateZ(20px);
+  }
+  .group-hover\:translate-z-20 {
+      transform: translateZ(20px);
+  }
+}
 
 .hover-effect{
   -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
 -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
 box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
 }
+
+
 
 
 
