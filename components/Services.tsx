@@ -1,3 +1,4 @@
+'use client'
 import React, { JSX } from "react";
 import { AiFillCode } from "react-icons/ai";
 import { IoLogoDesignernews } from "react-icons/io5";
@@ -9,6 +10,8 @@ import Development from "@/public/servicess_svg/service_dev.svg";
 import Deploy from "@/public/servicess_svg/service_deploy.svg";
 import SEO from "@/public/servicess_svg/service_seo.svg";
 import SUPPORT from "@/public/servicess_svg/service_active_support.svg";
+import ServiceImage from "./ServiceImage";
+
 
 function Services() {
   interface ServicesSection {
@@ -65,28 +68,13 @@ function Services() {
           <h3 className="bg-blue-400 py-2 px-3 text-white rounded-full">1</h3>
         </div>
 
-        <div className="w-full pt-2 sm:pt-4 md:pt-0 md:w-[47%] flex justify-center">
-          <Image
-            className="w-[300]"
-            width={300}
-            height={300}
-            src={Design}
-            alt="desin element"
-          />
-        </div>
+        <ServiceImage image={Design}/>
+        
       </div>
 
       <div className="flex flex-col gap-4 md:flex-row md:max-h-[450px] md:items-center md:justify-between py-2 sm:pt-[1rem] md:pt-[2rem]">
 
-      <div className="w-full pt-2 sm:pt-4 md:pt-0 md:w-[47%] flex justify-center">
-          <Image
-            className="w-[300]"
-            width={300}
-            height={300}
-            src={Development}
-            alt="desin element"
-          />
-        </div>
+      <ServiceImage image={Development}/>
 
         <div className="w-[6%] hidden justify-center md:flex">
           <h3 className="bg-blue-400 py-2 px-3 text-white rounded-full">2</h3>
@@ -114,28 +102,13 @@ function Services() {
           <h3 className="bg-blue-400 py-2 px-3 text-white rounded-full">3</h3>
         </div>
 
-        <div className="w-full pt-2 sm:pt-4 md:pt-0 md:w-[47%] flex justify-center">
-          <Image
-            className="w-[300]"
-            width={300}
-            height={300}
-            src={Deploy}
-            alt="desin element"
-          />
-        </div>
+        <ServiceImage image={Deploy}/>
+
       </div>
 
       <div className="flex flex-col gap-4 md:flex-row md:max-h-[450px] md:items-center md:justify-between py-2 ">
 
-      <div className="w-full pt-2 sm:pt-4 md:pt-0 md:w-[47%] flex justify-center">
-          <Image
-            className="w-[300]"
-            width={300}
-            height={300}
-            src={SEO}
-            alt="desin element"
-          />
-        </div>
+      <ServiceImage image={SEO}/>
 
         <div className="w-[6%] hidden justify-center md:flex">
           <h3 className="bg-blue-400 py-2 px-3 text-white rounded-full">4</h3>
@@ -162,15 +135,7 @@ function Services() {
           <h3 className="bg-blue-400 py-2 px-3 text-white rounded-full">5</h3>
         </div>
 
-        <div className="w-full pt-2 sm:pt-4 md:pt-0 md:w-[47%] flex justify-center">
-          <Image
-            className="w-[300]"
-            width={300}
-            height={300}
-            src={SUPPORT}
-            alt="desin element"
-          />
-        </div>
+        <ServiceImage image={SUPPORT}/>
       </div>
 
     </div>

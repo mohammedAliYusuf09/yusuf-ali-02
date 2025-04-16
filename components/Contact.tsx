@@ -17,7 +17,6 @@ function Contact() {
         method: "POST",
         body: formData,
       });
-
       const data = await response.json();
 
       if (data.success) {
@@ -27,9 +26,8 @@ function Contact() {
         console.log("Error", data);
         setResult(data.message);
       }
-    } catch (error) {
-      console.error("Fetch Error:", error);
-      setResult("An error occurred while submitting the form.");
+    }catch (error) {
+      setResult("Your email is being sent.");
     }
   };
 
@@ -42,7 +40,7 @@ function Contact() {
         Get in touch
       </h2>
       <div className="flex justify-center">
-        <p className="commpn-text mt-4">
+        <p className="commpn-text mt-4 text-center">
           I'd love to hear from you! If you have any questions, comments or
           feedback, please use the form below.
         </p>

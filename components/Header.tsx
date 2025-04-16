@@ -2,6 +2,7 @@
 import { CiMenuBurger } from "react-icons/ci";
 import { MdCancel } from "react-icons/md";
 import { useRef } from "react";
+import { motion } from 'framer-motion';
 
 
 
@@ -24,7 +25,11 @@ function Header() {
   };
 
   return (
-    <div className="w-full fixed px-2 lg:px-8 xl:px-[4%] py-4 z-50 bg-white drop-shadow-sm">
+    <motion.div 
+    initial={{ y: -20, opacity: 0 }}
+    animate={{ y: 0, opacity: 1 }}
+    transition={{ type: "spring", stiffness: 100, duration: 2000 }}
+    className="w-full fixed px-2 lg:px-8 xl:px-[4%] py-4 z-50 bg-white drop-shadow-sm">
       <div className="container flex items-center justify-between">
         <h1 className="font-Ovo text-2xl md:text-lg 2xl:text-xl">Yusuf Ali</h1>
         <ul className="hidden md:flex items-center gap-4">
@@ -49,7 +54,7 @@ function Header() {
           <li className=""><a className="font-Ovo  hover:text-gray-600 transition-colors ease-in duration-300" href="#work">My work</a></li>
         </ul>
       </div>
-    </div>
+    </motion.div>
   )
 }
 
