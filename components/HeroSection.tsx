@@ -14,9 +14,7 @@ function HeroSection() {
             Design & Developer
           </h1>
           <p className="commpn-text mt-4 text-center">
-            I am a Full-Stack Web Developer passionate about building dynamic,
-            user-friendly, and scalable web applications. I collaborate with
-            teams to create high-quality solutions that drive success.
+           I help real estate agents and agencies attract leads, build trust, and close more deals through modern, optimized websites.
           </p>
           <div className="flex gap-4 mt-8 items-center justify-center">
             <a
